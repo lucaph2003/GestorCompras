@@ -18,10 +18,20 @@ namespace Gestor_de_compras.UI
             InitializeComponent();
             int codigo;
             string mensaje;
-            lblGanancias.Text = Compras.sumaTotal(out codigo,out mensaje).ToString();
+            
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblInversionTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }

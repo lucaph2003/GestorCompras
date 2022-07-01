@@ -32,7 +32,6 @@ namespace Gestor_de_compras.UI
             this.listCompras = new System.Windows.Forms.ListView();
             this.colFecha = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colInversion = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.colGanancia = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colCantidadProductos = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -44,18 +43,18 @@ namespace Gestor_de_compras.UI
             this.listCompras.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colFecha,
             this.colInversion,
-            this.colGanancia,
             this.colCantidadProductos});
             this.listCompras.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listCompras.FullRowSelect = true;
             this.listCompras.GridLines = true;
             this.listCompras.HideSelection = false;
-            this.listCompras.Location = new System.Drawing.Point(157, 71);
+            this.listCompras.Location = new System.Drawing.Point(248, 72);
             this.listCompras.Name = "listCompras";
-            this.listCompras.Size = new System.Drawing.Size(654, 318);
+            this.listCompras.Size = new System.Drawing.Size(521, 318);
             this.listCompras.TabIndex = 0;
             this.listCompras.UseCompatibleStateImageBehavior = false;
             this.listCompras.View = System.Windows.Forms.View.Details;
+            this.listCompras.SelectedIndexChanged += new System.EventHandler(this.listCompras_SelectedIndexChanged);
             // 
             // colFecha
             // 
@@ -66,11 +65,6 @@ namespace Gestor_de_compras.UI
             // 
             this.colInversion.Text = "Inversion";
             this.colInversion.Width = 134;
-            // 
-            // colGanancia
-            // 
-            this.colGanancia.Text = "Ganancia";
-            this.colGanancia.Width = 134;
             // 
             // colCantidadProductos
             // 
@@ -83,7 +77,7 @@ namespace Gestor_de_compras.UI
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(343, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 32);
+            this.label1.Size = new System.Drawing.Size(288, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Registro de Compras";
             // 
@@ -109,7 +103,6 @@ namespace Gestor_de_compras.UI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ColumnHeader colFecha;
         private System.Windows.Forms.ColumnHeader colInversion;
-        private System.Windows.Forms.ColumnHeader colGanancia;
         private System.Windows.Forms.ColumnHeader colCantidadProductos;
     }
 }

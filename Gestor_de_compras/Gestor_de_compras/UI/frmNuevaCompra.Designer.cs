@@ -42,10 +42,6 @@ namespace Gestor_de_compras.UI
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtGanancia = new System.Windows.Forms.TextBox();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +50,7 @@ namespace Gestor_de_compras.UI
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(288, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 32);
+            this.label1.Size = new System.Drawing.Size(337, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Registrar Nueva Compra";
             // 
@@ -92,7 +88,7 @@ namespace Gestor_de_compras.UI
             // 
             this.checkBoxEnvio.AutoSize = true;
             this.checkBoxEnvio.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxEnvio.Location = new System.Drawing.Point(90, 320);
+            this.checkBoxEnvio.Location = new System.Drawing.Point(90, 258);
             this.checkBoxEnvio.Name = "checkBoxEnvio";
             this.checkBoxEnvio.Size = new System.Drawing.Size(121, 25);
             this.checkBoxEnvio.TabIndex = 4;
@@ -137,7 +133,6 @@ namespace Gestor_de_compras.UI
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape3,
             this.lineShape2,
             this.lineShape1});
             this.shapeContainer1.Size = new System.Drawing.Size(1020, 439);
@@ -187,53 +182,12 @@ namespace Gestor_de_compras.UI
             this.label5.TabIndex = 11;
             this.label5.Text = "$";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(86, 262);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 24);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Ganancia :";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(216, 263);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(21, 23);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "$";
-            // 
-            // txtGanancia
-            // 
-            this.txtGanancia.BackColor = System.Drawing.Color.Bisque;
-            this.txtGanancia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtGanancia.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGanancia.Location = new System.Drawing.Point(247, 262);
-            this.txtGanancia.Name = "txtGanancia";
-            this.txtGanancia.Size = new System.Drawing.Size(158, 26);
-            this.txtGanancia.TabIndex = 14;
-            // 
-            // lineShape3
-            // 
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 245;
-            this.lineShape3.X2 = 403;
-            this.lineShape3.Y1 = 293;
-            this.lineShape3.Y2 = 293;
-            // 
             // frmNuevaCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Bisque;
             this.ClientSize = new System.Drawing.Size(1020, 439);
-            this.Controls.Add(this.txtGanancia);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.dateTime);
@@ -268,9 +222,5 @@ namespace Gestor_de_compras.UI
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape1;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Label label5;
-        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtGanancia;
     }
 }

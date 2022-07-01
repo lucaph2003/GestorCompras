@@ -23,12 +23,14 @@ namespace Gestor_de_compras.UI
             {
                 ListViewItem items = new ListViewItem(com.mostrarfecha());
                 items.SubItems.Add("$" + com.Inversion.ToString());
-                items.SubItems.Add("$" + com.Ganancia.ToString());
                 items.SubItems.Add("x" + com.CantidadProductos.ToString());
                 listCompras.Items.Add(items);
             }
         }
 
+        private void listCompras_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

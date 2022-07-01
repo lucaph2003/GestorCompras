@@ -32,8 +32,7 @@ namespace Gestor_de_compras.UI
             Compras compra = new Compras();
             int CantProductos = int.Parse(txtCantProductos.Text.ToString());
             int Monto = int.Parse(txtMonto.Text.ToString());
-            int Ganancia = int.Parse(txtGanancia.Text.ToString());
-            compra.registroCompra(CantProductos,Monto,Ganancia,dtp,envio, out int codigo, out String mensaje);
+            compra.registroCompra(CantProductos,Monto,dtp,envio, out int codigo, out String mensaje);
             if (codigo == 1)
             {
                 MessageBox.Show("Se ha registrado con exito! ! ! ");
